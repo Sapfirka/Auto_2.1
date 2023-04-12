@@ -36,7 +36,7 @@ public class cardholderTest {
         inputs.get(0).sendKeys("Иванов Василий");
         inputs.get(1).sendKeys ("+79778888888");
         driver.findElement(By.className("checkbox__box")).click();
-        Thread.sleep(8000);
+        Thread.sleep(5000);
         driver.findElement(By.tagName("button")).click();
         String expected = "Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время.";
         String actual = driver.findElement(By.className("Success_successBlock__2L3Cw")).getText().trim();
